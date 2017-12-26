@@ -22,7 +22,13 @@ X_rec = zeros(size(Z, 1), size(U, 1));
 %               
 
 
-
+for j = 1:size(Z,1)
+    for i = 1:size(U, 1)
+        v = Z(j, :)';
+        X_rec(j,i) = v' * U(i, 1:K)';
+    end
+end
+ 
 % =============================================================
 
 end

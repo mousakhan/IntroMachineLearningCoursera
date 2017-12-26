@@ -21,6 +21,9 @@ S = zeros(n);
 %
 
 
+covariance = (1/m) * (X' * X);
+
+[U, S, V] = svd(covariance);
 
 
 
